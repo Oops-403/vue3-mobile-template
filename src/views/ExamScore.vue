@@ -1,0 +1,3 @@
+<template>
+    exam score
+</template>

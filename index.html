@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vivo双十一活动</title>
+  <!-- <link rel="stylesheet" href="./css/init.css?r=705"> -->
+  <!-- <link rel="stylesheet" href="./css/home.css?r=707"> -->
+  <!-- <link rel="stylesheet" href="https://dccqcdn.tingmall.com/vivo/jayday/css/font.otf"> -->
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+  <script>
+    (function (w, d, s, q, i) {
+      w[q] = w[q] || [];
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true;
+      j.id = 'beacon-aplus';
+      j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'aplus_queue', '203467608');
+
+    //集成应用的appKey
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['appKey', '62b535a905844627b5c506e9']
+    });
+
+    /************************以下内容为可选配置内容****************************/
+    //是否需要关闭自动PV采集的能力，指定MAN为关闭自动PV
+    //注意：对于单页应用，强烈建议您关闭自动PV, 手动控制PV事件的发送时机
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['aplus-waiting', 'MAN']
+    });
+
+    //是否开启调试模式 
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['DEBUG', true]
+    });
+  </script>
+</head>
+
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
